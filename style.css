@@ -1429,3 +1429,26 @@ html[data-theme="light"] #tema::after{
   #tema::before{background:ButtonText}
   #tema::after{filter:none}
 }
+
+/* ===== Contato com foto da academia ===== */
+.cta-2{display:grid;gap:24px;align-items:center;text-align:center}
+.cta-2 .cta-ph{
+  position:relative;z-index:1;margin:0;width:100%;
+  aspect-ratio:4/3;overflow:hidden;border-radius:14px;
+  border:1px solid var(--bd);background:var(--cd);
+}
+.cta-2 .cta-ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.cta-2 .cta-txt{position:relative;z-index:1;min-width:0}
+
+@media(max-width:700px){
+  .cta-2{padding:20px 18px 36px;gap:22px}
+  .cta-2 .cta-ph{aspect-ratio:4/3;border-radius:12px}
+}
+
+@media(min-width:900px){
+  .cta-2{grid-template-columns:1fr 1fr;gap:clamp(32px,4vw,64px);padding:clamp(28px,3vw,48px);text-align:left}
+  .cta-2 .cta-ph{aspect-ratio:1/1;max-height:520px}
+  .cta-2 p{margin-left:0;margin-right:0}
+  .cta-2 .acts{justify-content:flex-start}
+  html .cta.cta-2 .eye{justify-content:flex-start}
+}
