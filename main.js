@@ -23,6 +23,7 @@ const IMAGENS = {
 
   sfLogo:     "assets/logos/coffee.png",
   sfEspaco:   "assets/academia/gym.jpg",
+  contato:    "assets/academia/academia3.jpg",
 
   avaliacao: [
     "assets/avaliacao/1.png",
